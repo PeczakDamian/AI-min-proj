@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Image Comparison Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Porównywarka zdjęć</h1>
+        <label>Zdjęcie 1 <input type="text" id="imgPath1" placeholder="ścieżka do pliku">
+            <select id="opt1">
+                <option></option>
+                <option value="albedo.png">Przykład 1</option>
+                <option value="normal.png">Przykład 2</option>
+                <option value="ao.png">Przykład 3</option>
+            </select></label><br>
+        <label>Zdjęcie 2 <input type="text" id="imgPath2" placeholder="ścieżka do pliku">
+            <select id="opt2">
+                <option></option>
+                <option value="albedo.png">Przykład 1</option>
+                <option value="normal.png">Przykład 2</option>
+                <option value="ao.png">Przykład 3</option>
+            </select></label>
+        <button id="btn">Porównaj</button>
+        <button id="rst">Resetuj</button>
+    </header>
+    <section class="comp">
+        <div class="to-comp">
+            <img id="img1" src="darkMode.png" alt="Dark mode" width="1280" height="720">
+        </div>
+        <div class="to-comp brd">
+            <img id="img2" src="lightMode.png" alt="Light mode" width="1280" height="720">
+        </div>
+    </section>
+    <script src="comparator.js"></script>
+</body>
+
+</html>
